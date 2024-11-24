@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background:url("https://www.advantour.com/img/uzbekistan/tashkent/museums/amir-timur-museum/amir-timur-museum.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position:center ;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: black;
+    margin: 0;
+}
+
+.nav a {
+    margin: 0 15px;
+    color:rgb(255, 255, 255) ;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+    /* background: url('') no-repeat center/cover; */
+    color: #fff;
+     background: green;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.2rem;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: blue;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 20px auto;
+    color: #555;
+}
+
+/* Sections Grid */
+.sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.section-item {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+}
+
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sections-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
